@@ -13,10 +13,10 @@ export const auth = (req: Request, res: Response) => {
     },
     process.env.JWT_SALT,
     {
-      expiresIn: 120,
+      expiresIn: 600,
     }
   );
-  res.json({
+  return res.json({
     token,
   });
 };
