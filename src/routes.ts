@@ -8,11 +8,10 @@ import { secret } from "./routes/secret";
 
 const router = express.Router();
 
-// AUTHENTICATION
+// AUTH
 router.post("/auth", auth);
-// AUTH CONFIRM
-router.get("/secret", secret);
-
+// AUTH CONFIRMATION
+router.get("/secret", IsAuthenticated, secret);
 // USER
 // CREATE - PRIVADO
 router.post("/users", IsAuthenticated, UserController.create);
@@ -40,7 +39,7 @@ router.delete("/veiculos/:veicId", IsAuthenticated, VeicController.delete);
 // VENDAS
 // READ ALL VENDAS
 router.get("/vendas/:status", IsAuthenticated, VendaController.findRes);
-router.get("/vendas/:status", IsAuthenticated, VendaController.findVend);
+router.get("/vendas/:status", IsAuthenticated, VendaController.findRes);
 // READ ALL BY idVendedor
 router.get("/vendedor/:id", IsAuthenticated, VendaController.findbyId);
 

@@ -20,13 +20,15 @@ class VeicController {
   }
 
   async create(req: Request, res: Response) {
-    const { marca, modelo, valor, cor, km } = req.body;
+    const { marca, modelo, valor, cor, km, status, idVendedor } = req.body;
     const veic = await VeicModel.create({
       marca,
       modelo,
       valor,
       cor,
       km,
+      status,
+      idVendedor,
     });
     return res.status(201).json(veic);
   }

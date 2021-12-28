@@ -1,5 +1,6 @@
 import { DataTypes } from "sequelize";
 import { db } from "../db";
+import { UserModel } from "./UserModel";
 
 export const VeicModel = db.define("veic", {
   id: {
@@ -28,4 +29,17 @@ export const VeicModel = db.define("veic", {
     type: DataTypes.INTEGER,
     allowNull: false,
   },
+  status: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+  comprador: {
+    type: DataTypes.STRING,
+    allowNull: true,
+  },
+});
+
+VeicModel.belongsTo(UserModel, {
+  constraints: false,
+  foreignKey: "idVendedor",
 });
