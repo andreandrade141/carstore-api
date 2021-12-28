@@ -7,7 +7,7 @@ export const IsAuthenticated = (
   next: NextFunction
 ) => {
   try {
-    const token = req.headers.authorization.replace("Bearer", "");
+    const token = req.headers.authorization.replace("Bearer ", "");
     const validToken = verify(token, process.env.JWT_SALT);
     // eslint-disable-next-line dot-notation
     req["tokenData"] = validToken;
