@@ -28,4 +28,8 @@ export const UserModel = db.define("user", {
     type: DataTypes.INTEGER,
     allowNull: false,
   },
+  pass: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
 });
