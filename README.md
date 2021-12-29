@@ -26,4 +26,5 @@ Vendas:
 3-) GET /vendedor/id -> Retorno de todas as operações de um determinado vendedor.
 
 Observações:
-Utilizar POSTMAN para teste das requisições. Segue ID do workspace: 58c27a49-ef7f-4d9f-b3df-7bbd9ea054c4.
+1-) Utilizar POSTMAN para teste das requisições. Segue ID do workspace: 58c27a49-ef7f-4d9f-b3df-7bbd9ea054c4.
+2-) Branch Teste_Lógico contem os arquivos referentes ao teste lógico do processo seletivo.
