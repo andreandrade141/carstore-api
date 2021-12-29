@@ -26,4 +26,4 @@ Vendas:
 3-) GET /vendedor/id -> Retorno de todas as operações de um determinado vendedor.
 
 Observações:
-arquivo api.http: REST CLIENT para fazer as requisições. todas as requisições já estão connfiguradas no arquivo. Opção de se usar o Postman/Insomnia também.
+Utilizar POSTMAN para teste das requisições. Segue ID do workspace: 58c27a49-ef7f-4d9f-b3df-7bbd9ea054c4.
