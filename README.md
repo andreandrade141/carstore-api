@@ -1,14 +1,15 @@
 # LUBY_PROCESSO_SELETIVO
+
 CRUD PARA LOJA DE VEÍCULOS
 
-Rotas: 
-Autenticação: 
+Rotas:
+Autenticação:
 1-)POST /auth -> Rota de Login
 2-)GET /secret -> Rota de Teste de Autenticação
 
-Usuarios:
+Usuários:
 1-) POST /users -> Criação de novo usuário.
-2-) GET /users -> Rertorno de todos os usuarios no BD.
+2-) GET /users -> Retorno de todos os usuários no BD.
 3-) GET /users/userId -> Retorno de um usuário específico.
 4-) UPDATE /users/userId -> Atualização de dados de um usuário.
 5-) DELETE /users/userId -> Exclui um usuário do banco de dados.
